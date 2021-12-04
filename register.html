@@ -28,31 +28,28 @@
 
                         <div class="form mb-3">
                             <label for="name" class="form-label"> Nome </label>
-                            <input type="text" class="form-control" id="name" name="name"
-                                placeholder="Digite o seu Nome">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Digite o seu Nome" required>
                         </div>
 
                         <div class="form mb-3">
                             <label for="email" class="form-label"> E-mail </label>
-                            <input type="email" class="form-control" id="email" name="email"
-                                placeholder="Digite o seu e-mail">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Digite o seu e-mail" required>
                         </div>
 
                         <div class="form mb-3">
                             <label for="password" class="form-label">Digite a sua senha</label>
-                            <input type="password" class="form-control" id="password" name="password"
-                                placeholder="Digite a sua senha">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Digite a sua senha" required pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,}$">
+                            <div id="password-message" class="form-text">A senha deve conter pelo menos 8 caracteres, com no mínimo 1 número, uma letra maiúscula e uma minúscula.</div>
                         </div>
 
                         <div class="form mb-3">
                             <label for="passwordConfirm" class="form-label">Confirme a sua senha</label>
-                            <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm"
-                                placeholder="Confirme a sua senha">
+                            <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm"  required placeholder="Confirme a sua senha">
                         </div>
 
                         <div class="mb-3">
                             <div class="form-check mb-2">
-                                <input type="checkbox" class="form-check-input" id="checkbox-term" value="" id="checkbox-term" name="checkbox-term">
+                                <input type="checkbox" class="form-check-input" id="checkbox-term" value="" id="checkbox-term" name="checkbox-term" required>
                                 <label for="checkbox-term" class="form-check-label">
                                     Você aceita os <a href="#">Termos de serviço</a>?
                                 </label>

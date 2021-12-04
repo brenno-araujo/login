@@ -66,6 +66,7 @@ body{
 
 #form-container .form-control:focus{
     box-shadow: none;
+    border-color: #6c63ff;
 }
 
 #link-register{
