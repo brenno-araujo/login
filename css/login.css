@@ -61,16 +61,21 @@ body{
     margin-top: 10px;
     width: 100%;
     background-color: #6c63ff;
-    border-bottom: #6c63ff;
+    border: #6c63ff;
 }
 
 #form-container .form-control:focus{
     box-shadow: none;
 }
 
-#link-container{
+#link-register{
     text-align: center;
     padding-top: 20px;
+}
+
+#link-password{
+    text-align: center;
+    padding-top: 10px;
 }
 
 @media (max-width: 768px){
@@ -78,10 +83,34 @@ body{
         height: auto;
     }
 
-    #link-container{
+    #form-container h2{
+        font-weight: 700;
+        font-size: 23px;
+    }
+
+    #link-register{
         text-align: center;
-        padding-top: 4px;
-        padding-bottom: 10px;
+        padding-top: 8px;
+        font-size: 12px;
+    }
+
+    #link-password{
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 8px;
+        font-size: 12px;
+    }
+
+    #form-container form{
+        font-size: 12px;
+    }
+
+    #form-container input{
+        font-size: 12px;
+    }
+
+    #form-container button{
+        font-size: 12px;
     }
 }
 
